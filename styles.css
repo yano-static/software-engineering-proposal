@@ -143,3 +143,10 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 8px 0 #05060a;
 }
+
+/* ===== WBS SCREEN ===== */
+#wbsScreen {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* ... rest of your CSS (wbs-container, wbs-grid, game cards, modal, @media, etc.) ... */
