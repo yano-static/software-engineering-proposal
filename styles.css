@@ -1,17 +1,18 @@
+/* ==== GLOBAL RESET & THEME ==== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --primary: #2c3e50;
-    --secondary: #e74c3c;
-    --accent: #3498db;
-    --light: #ecf0f1;
-    --dark: #1a1a1a;
-    --success: #27ae60;
-    --warning: #f39c12;
+  --primary: #2c3e50;
+  --secondary: #e74c3c;
+  --accent: #3498db;
+  --light: #ecf0f1;
+  --dark: #1a1a1a;
+  --success: #27ae60;
+  --warning: #f39c12;
 }
 
 body {
@@ -22,11 +23,23 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== HOME SCREEN ===== */
+/* ===== SCREENS LAYOUT (KEEPING ORIGINAL BEHAVIOR) ===== */
+.screen {
+  display: none;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.screen.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HOME SCREEN (PIXEL / MYSTERY VIBE) ===== */
 #homeScreen {
   justify-content: center;
   align-items: center;
-  /* pixel‑style sky + ground */
+  /* pixel-style sky + ground */
   background-image:
     linear-gradient(#020612 0, #020612 40%, #1a5e3b 40%, #1a5e3b 55%, #3c8a4d 55%, #3c8a4d 100%),
     radial-gradient(circle at 10% 20%, #3c9cff 0, transparent 40%),
@@ -44,6 +57,17 @@ body {
   border: 4px solid #3c8a4d;
   box-shadow: 0 0 0 4px #020612, 0 18px 0 #05060a;
   animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero h1 {
@@ -84,7 +108,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* Blocky “Minecraft-ish” buttons */
+/* Blocky “Minecraft-ish” buttons (also used on other screens) */
 .btn {
   padding: 14px 32px;
   font-size: 0.85em;
