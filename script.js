@@ -339,11 +339,11 @@ const GAME_CONCEPTS = [
       "A system failure in the Dalupan Building prevents the evacuation alert from reaching the entire campus, leading to the mysterious disappearance and eventual collapse of the university grounds.",
     summary: `A system failure in the Dalupan Building prevents the evacuation alert from reaching the entire campus. As the player explores from the LB Building across key campus areas, they must uncover the reason behind the alert failure and navigate to the Dalupan Building itself. The investigation reveals a critical twist: students were safely confined in a secure area—the player's true objective is to release them. This narrative explores themes of miscommunication, hidden safety protocols, and the weight of responsibility.`,
     logos: [
-      "thelockedwing.jpg",
-      "thelockedwing2.jpg",
-      "thelockedwing4.jpg",
-      "thelockedwing6.jpg",
-      "logo.jpg"
+      "thelockedwing.png",
+      "thelockedwing2.png",
+      "thelockedwing4.png",
+      "thelockedwing6.png",
+      "logo.png"
     ]
   },
   {
@@ -354,11 +354,11 @@ const GAME_CONCEPTS = [
       "After receiving a mysterious message from a missing friend, the player embarks on a journey across the campus to find them. Scattered files reveal fragments of the school's hidden secrets.",
     summary: `The player receives an urgent message from their missing friend and begins a quest across the campus from Gastambide Gate. Their search leads them through various areas, culminating in the Archives Room at Podicit Area, where lost documents reveal campus mysteries. The journey progresses from exploration to discovery, leading to an encounter with the disoriented but cooperative friend. Together, they uncover truths about the campus. The narrative branches at the climax: choose self-preservation and abandon the friend, or sacrifice yourself to save them—becoming the new "missing friend" with memory lost. This game explores themes of friendship, sacrifice, and the cyclical nature of mysteries.`,
     logos: [
-      "theforgottenfiles.jpg",
-      "theforgottenfiles2.jpg",
-      "theforgottenfiles3.jpg",
-      "theforgottenfiles4.jpg",
-      "AIpromptedlogo.jpg"
+      "theforgottenfiles.png",
+      "theforgottenfiles2.png",
+      "theforgottenfiles3.png",
+      "theforgottenfiles4.png",
+      "AIpromptedlogo.png"
     ]
   },
   {
@@ -369,11 +369,7 @@ const GAME_CONCEPTS = [
       "The player awakens in an abandoned campus garden with no clear goal. As they wander aimlessly, curiosity leads them to a broken Lualhati statue—the key to restoring the campus's lost essence.",
     summary: `Beginning in Recto Garden with no initial purpose, the player wanders the dreamlike campus—a blank slate of exploration. Their curiosity gradually focuses when they discover the first fragment of a broken Lualhati statue in the Quadrangle central hub. A new objective emerges: restore the statue. Through exploration of optional puzzle sections, the player collects remaining fragments. Once assembled, a bright light envelops the scene, restoring the campus to normalcy. The narrative ends ambiguously: the player wakes to an NPC's casual remark about "putting things back together," leaving them uncertain whether the experience was real or imagined. This game explores themes of healing, ambiguity, and quiet transformation.`,
     logos: [
-      "hallowpoint.jpg",
-      "hallowpoint2.jpg",
-      "hallowpoint3.jpg",
-      "hallowpoint4.jpg",
-      "hallowpoint5.jpg"
+      "hallowpoint2.png"
     ]
   },
   {
@@ -384,11 +380,7 @@ const GAME_CONCEPTS = [
       "A campus-wide systems puzzle where gates, rooms, and devices form a dynamic network the player must analyze and reconfigure to escape in time.",
     summary: `The player begins at the Main Gate, realizing the campus has turned into a puzzle-box of interlinked systems: RFID gates, elevators, lab access, and hidden server rooms. By exploring key points such as the LB Building, CC Lab, and Admin Offices, the player pieces together how different nodes control access around the campus. In each area, they solve device-based puzzles or logic challenges that reveal new connections on their mental map. The endgame reveals a critical systems misconfiguration preventing safe evacuation. By choosing how to reroute power and access, the player either restores balance—or traps themselves in a new kind of lockdown. This game emphasizes systemic thinking, cause-and-effect, and the complexity of modern campuses.`,
     logos: [
-      "campusquest.jpg",
-      "campusquest2.jpg",
-      "campusquest3.jpg",
-      "campusquest4.jpg",
-      "campusquest5.jpg"
+      "campusquest.png"
     ]
   }
 ];
