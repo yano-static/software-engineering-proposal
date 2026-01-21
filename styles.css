@@ -149,4 +149,189 @@ body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-/* ... rest of your CSS (wbs-container, wbs-grid, game cards, modal, @media, etc.) ... */
+.wbs-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.wbs-header {
+  padding: 30px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+}
+
+.wbs-header h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.wbs-header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+.month-tabs {
+  display: flex;
+  gap: 10px;
+  padding: 20px 30px;
+  border-bottom: 2px solid #ecf0f1;
+  background: #f8f9fa;
+}
+
+.month-tab {
+  padding: 10px 25px;
+  border: none;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.month-tab:hover {
+  background: var(--light);
+}
+
+.month-tab.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--secondary);
+}
+
+.wbs-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.wbs-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.week-column {
+  background: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.week-header {
+  background: var(--primary);
+  color: white;
+  padding: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tasks-list {
+  padding: 15px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.task-item {
+  background: white;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border-left: 4px solid var(--accent);
+  transition: all 0.3s ease;
+  font-size: 0.9em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.task-item:hover {
+  background: #ecf0f1;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* right event panel */
+.event-panel {
+  width: 350px;
+  background: white;
+  border-left: 2px solid #ecf0f1;
+  padding: 30px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.event-panel-header {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.event-default {
+  text-align: center;
+  color: #95a5a6;
+  padding: 40px 20px;
+}
+
+.event-default p {
+  font-size: 0.95em;
+}
+
+.event-content {
+  display: none;
+}
+
+.event-content.active {
+  display: block;
+}
+
+.event-title {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.event-month {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.event-clue {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #555;
+  border-left: 4px solid var(--accent);
+}
+
+.event-game-pill {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-top: 10px;
+}
