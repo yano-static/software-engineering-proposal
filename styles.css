@@ -35,27 +35,41 @@ body {
   flex-direction: column;
 }
 
-/* ===== HOME SCREEN (PIXEL / MYSTERY VIBE) ===== */
+/* ===== HOME SCREEN (CINEMATIC GATE) ===== */
 #homeScreen {
   justify-content: center;
   align-items: center;
-  /* pixel-style sky + ground */
-  background-image:
-    linear-gradient(#020612 0, #020612 40%, #1a5e3b 40%, #1a5e3b 55%, #3c8a4d 55%, #3c8a4d 100%),
-    radial-gradient(circle at 10% 20%, #3c9cff 0, transparent 40%),
-    radial-gradient(circle at 80% 30%, #f7ff8c 0, transparent 40%);
+  min-height: 100vh;
+  background-image: url("homepage.jpg");
   background-size: cover;
-  image-rendering: pixelated;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #f5f6fa;
 }
 
+/* dark overlay so text is readable */
+#homeScreen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9));
+}
+
+/* updated hero card */
 .hero {
-  text-align: center;
-  max-width: 900px;
-  background: rgba(5, 8, 18, 0.95);
-  padding: 36px 30px;
-  border-radius: 0;
-  border: 4px solid #3c8a4d;
-  box-shadow: 0 0 0 4px #020612, 0 18px 0 #05060a;
+  position: relative; /* sit above overlay */
+  text-align: left;
+  max-width: 780px;
+  width: 100%;
+  background: rgba(5, 8, 18, 0.82);
+  padding: 32px 34px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
   animation: slideUp 0.8s ease;
 }
 
@@ -71,77 +85,74 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.6em;
-  color: #f7ff8c;
-  margin-bottom: 10px;
+  font-size: 2.4em;
+  color: #f9f9ff;
+  margin-bottom: 6px;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-shadow: 0 0 10px #3c9cff;
 }
 
 .hero .subtitle {
-  font-size: 0.95em;
-  color: #9ad6ff;
-  margin-bottom: 24px;
-  letter-spacing: 0.16em;
+  font-size: 0.9em;
+  color: #f1c40f;
+  margin-bottom: 18px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 .hero p {
   font-size: 0.95em;
-  color: #dfe6e9;
-  margin-bottom: 18px;
+  color: #dcdde1;
+  margin-bottom: 14px;
   line-height: 1.7;
 }
 
 .hero .tagline {
   font-size: 0.9em;
   color: #b2bec3;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 16px;
-  justify-content: center;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
-/* Blocky “Minecraft-ish” buttons (also used on other screens) */
+/* Buttons styled for new vibe */
 .btn {
-  padding: 14px 32px;
-  font-size: 0.85em;
-  border: 3px solid #000;
-  border-radius: 0;
+  padding: 12px 26px;
+  font-size: 0.8em;
+  border-radius: 999px;
+  border: 0;
   cursor: pointer;
   font-weight: 700;
-  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.15s ease;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  box-shadow: 0 6px 0 #05060a;
+  letter-spacing: 0.14em;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.15s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.65);
 }
 
 .btn-primary {
-  background: #3c8a4d;
-  color: #f7ff8c;
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: #1b1b25;
 }
 
 .btn-primary:hover {
-  background: #51a85f;
   transform: translateY(-2px);
-  box-shadow: 0 8px 0 #05060a;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.9);
 }
 
 .btn-secondary {
-  background: #3c9cff;
-  color: #020612;
+  background: rgba(15, 76, 117, 0.9);
+  color: #ecf0f1;
 }
 
 .btn-secondary:hover {
-  background: #5fb3ff;
+  background: rgba(21, 101, 192, 0.95);
   transform: translateY(-2px);
-  box-shadow: 0 8px 0 #05060a;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.9);
 }
 
 /* ===== WBS SCREEN ===== */
@@ -571,8 +582,13 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 24px 20px;
+    margin: 0 16px;
+  }
+
   .hero h1 {
-    font-size: 2em;
+    font-size: 1.9em;
   }
 
   .hero-buttons {
@@ -603,4 +619,3 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
