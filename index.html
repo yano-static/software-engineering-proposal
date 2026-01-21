@@ -1,110 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Chronicles: Interactive Narrative Concepts</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Chronicles: Interactive Narrative Concepts</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HOME SCREEN -->
-<div id="homeScreen" class="screen active">
-  <div class="hero">
-    <h1>Titles, Logo, WBS</h1>
-    <p class="subtitle">By Group 5</p>
+  <!-- HOME SCREEN -->
+  <div id="homeScreen" class="screen active">
+    <div class="hero">
+      <h1>Titles, Logo, WBS</h1>
+      <p class="subtitle">By Group 5</p>
 
-    <p>
-      Explore the mysteries of our UE‑themed mystery game, reimagined with a chunky,
-      pixelated world inspired by sandbox adventures like Minecraft.
-    </p>
+      <p>
+        Explore the mysteries of our UE‑themed mystery game, reimagined with a chunky,
+        pixelated world inspired by sandbox adventures like Minecraft.
+      </p>
 
-    <p class="tagline">
-      Follow the clues across timelines, concepts, and logos to uncover what’s really
-      happening on campus.
-    </p>
+      <p class="tagline">
+        Follow the clues across timelines, concepts, and logos to uncover what’s really
+        happening on campus.
+      </p>
 
-    <div class="hero-buttons">
-      <button class="btn btn-primary" onclick="switchScreen('wbsScreen')">
-        View WBS Timeline
-      </button>
-      <button class="btn btn-secondary" onclick="switchScreen('gameConceptsScreen')">
-        Explore Game Concepts
-      </button>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="switchScreen('wbsScreen')">
+          View WBS Timeline
+        </button>
+        <button class="btn btn-secondary" onclick="switchScreen('gameConceptsScreen')">
+          Explore Game Concepts
+        </button>
+      </div>
     </div>
   </div>
-</div>
 
-
-    <!-- WBS SCREEN -->
-    <div id="wbsScreen" class="screen">
-        <div class="wbs-container">
-            <div class="wbs-header">
-                <h2>📅 Development Timeline</h2>
-                <p>Work Breakdown Structure – December & January</p>
-            </div>
-            <div class="month-tabs">
-                <button class="month-tab active" onclick="switchMonth(event, 'december')">December</button>
-                <button class="month-tab" onclick="switchMonth(event, 'january')">January</button>
-            </div>
-            <div class="wbs-content">
-                <div class="wbs-grid" id="wbsGrid"></div>
-                <div class="event-panel">
-                    <div class="event-panel-header">📌 Event Details</div>
-                    <div class="event-default">
-                        <p>Click a task to view details and lore.</p>
-                    </div>
-                    <div class="event-content" id="eventContent"></div>
-                </div>
-            </div>
+  <!-- WBS SCREEN -->
+  <div id="wbsScreen" class="screen">
+    <div class="wbs-container">
+      <div class="wbs-header">
+        <h2>📅 Development Timeline</h2>
+        <p>Work Breakdown Structure – December &amp; January</p>
+      </div>
+      <div class="month-tabs">
+        <button class="month-tab active" onclick="switchMonth(event, 'december')">December</button>
+        <button class="month-tab" onclick="switchMonth(event, 'january')">January</button>
+      </div>
+      <div class="wbs-content">
+        <div class="wbs-grid" id="wbsGrid"></div>
+        <div class="event-panel">
+          <div class="event-panel-header">📌 Event Details</div>
+          <div class="event-default">
+            <p>Click a task to view details and lore.</p>
+          </div>
+          <div class="event-content" id="eventContent"></div>
         </div>
-        <div style="text-align: center; margin-top: 20px;">
-            <button class="btn btn-back" onclick="switchScreen('homeScreen')">← Back to Home</button>
-        </div>
+      </div>
     </div>
 
-    <!-- GAME CONCEPTS SCREEN -->
-    <div id="gameConceptsScreen" class="screen">
-        <div class="concepts-container">
-            <div class="concepts-header">
-                <h2>🎯 Game Concepts</h2>
-                <p>Four interconnected narratives set across the UE campus</p>
-            </div>
-            <div class="game-cards-grid" id="gameCardsGrid"></div>
-            <div style="text-align: center; margin-top: 20px;">
-                <button class="btn btn-back" onclick="switchScreen('homeScreen')">← Back to Home</button>
-            </div>
-        </div>
+    <!-- WBS IMAGE GALLERY -->
+    <div style="max-width: 1200px; margin: 30px auto 0; text-align: center;">
+      <h3 style="color: white; margin-bottom: 10px;">Full WBS Charts</h3>
+      <p style="color: #ecf0f1; margin-bottom: 20px; font-size: 0.9em;">
+        Reference images of the original December and January WBS.
+      </p>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        <img
+          src="wbs-december.png"
+          alt="December WBS"
+          style="max-width: 100%; max-height: 260px; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.4); background: #fff;"
+        />
+        <img
+          src="wbs-january.png"
+          alt="January WBS"
+          style="max-width: 100%; max-height: 260px; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.4); background: #fff;"
+        />
+      </div>
     </div>
 
-    <!-- GAME DETAIL SCREEN -->
-    <div id="gameDetailScreen" class="screen">
-        <div class="game-detail-container">
-            <div class="game-detail-header">
-                <h2 id="detailTitle"></h2>
-                <div class="game-mood" id="detailMood"></div>
-            </div>
-            <div class="game-detail-body">
-                <div class="game-summary" id="detailSummary"></div>
-                <div class="logos-section">
-                    <h3>Game Logos & Assets</h3>
-                    <div class="logos-grid" id="logosGrid"></div>
-                </div>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 20px;">
-            <button class="btn btn-back" onclick="switchScreen('gameConceptsScreen')">← Back to Concepts</button>
-        </div>
+    <div style="text-align: center; margin-top: 20px;">
+      <button class="btn btn-back" onclick="switchScreen('homeScreen')">← Back to Home</button>
     </div>
+  </div>
 
-    <!-- IMAGE MODAL -->
-    <div id="imageModal" class="modal">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal()">&times;</button>
-            <img id="modalImage" class="modal-image" src="" alt="Logo">
-            <div class="modal-title" id="modalTitle"></div>
-        </div>
+  <!-- GAME CONCEPTS SCREEN -->
+  <div id="gameConceptsScreen" class="screen">
+    <div class="concepts-container">
+      <div class="concepts-header">
+        <h2>🎯 Game Concepts</h2>
+        <p>Four interconnected narratives set across the UE campus</p>
+      </div>
+      <div class="game-cards-grid" id="gameCardsGrid"></div>
+      <div style="text-align: center; margin-top: 20px;">
+        <button class="btn btn-back" onclick="switchScreen('homeScreen')">← Back to Home</button>
+      </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- GAME DETAIL SCREEN -->
+  <div id="gameDetailScreen" class="screen">
+    <div class="game-detail-container">
+      <div class="game-detail-header">
+        <h2 id="detailTitle"></h2>
+        <div class="game-mood" id="detailMood"></div>
+      </div>
+      <div class="game-detail-body">
+        <div class="game-summary" id="detailSummary"></div>
+        <div class="logos-section">
+          <h3>Game Logos &amp; Assets</h3>
+          <div class="logos-grid" id="logosGrid"></div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+      <button class="btn btn-back" onclick="switchScreen('gameConceptsScreen')">← Back to Concepts</button>
+    </div>
+  </div>
+
+  <!-- IMAGE MODAL -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <img id="modalImage" class="modal-image" src="" alt="Logo">
+      <div class="modal-title" id="modalTitle"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
