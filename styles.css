@@ -335,3 +335,272 @@ body {
   font-weight: 600;
   margin-top: 10px;
 }
+
+/* ===== GAME CONCEPTS SCREEN ===== */
+#gameConceptsScreen {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.concepts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.concepts-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.concepts-header h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.concepts-header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+.game-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.game-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.game-card-header {
+  height: 150px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 20px;
+}
+
+.game-card-body {
+  padding: 20px;
+}
+
+.game-card-title {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.game-card-preview {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* ===== GAME DETAIL SCREEN ===== */
+#gameDetailScreen {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.game-detail-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.game-detail-header {
+  padding: 50px 30px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  text-align: center;
+}
+
+.game-detail-header h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.game-mood {
+  font-size: 1.1em;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.game-detail-body {
+  padding: 40px 30px;
+}
+
+.game-summary {
+  margin-bottom: 40px;
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.05em;
+}
+
+.logos-section {
+  margin-top: 40px;
+}
+
+.logos-section h3 {
+  font-size: 1.3em;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.logo-item {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== IMAGE MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 90%;
+}
+
+.modal-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.modal-close:hover {
+  color: var(--secondary);
+}
+
+.modal-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .wbs-content {
+    flex-direction: column;
+  }
+
+  .event-panel {
+    width: 100%;
+    border-left: none;
+    border-top: 2px solid #ecf0f1;
+    max-height: 300px;
+  }
+
+  .wbs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .wbs-container {
+    height: auto;
+  }
+
+  .wbs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-detail-header h2 {
+    font-size: 1.8em;
+  }
+
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
