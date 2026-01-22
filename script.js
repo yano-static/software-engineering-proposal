@@ -360,7 +360,7 @@ function renderWBS() {
 
     const weekHeader = document.createElement("div");
     weekHeader.className = "week-header";
-    weekHeader.textContent = `${week.weekLabel} – ${week.days}`;
+    weekHeader.textContent = week.weekLabel;   // ← fixed
 
     const tasksList = document.createElement("div");
     tasksList.className = "tasks-list";
@@ -382,6 +382,7 @@ function renderWBS() {
     wbsGrid.appendChild(weekColumn);
   });
 }
+
 
 function showEventDetails(task) {
   const eventContent = document.getElementById("eventContent");
