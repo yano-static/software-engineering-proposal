@@ -1,334 +1,269 @@
-// ===== DATA OBJECTS =====
 const WBS_DATA = {
   december: {
     month: "December",
     weeks: [
       {
-        weekLabel: "Week 1",
-        days: "Group created, Picking roles",
+        weekLabel: "Week 1 (8–14)",
+        days: "No Meeting • Progress Tracking • TL Meeting & GD Recording • Editing & Finalizing Portfolio",
         tasks: [
           {
-            name: "Group created, Picking roles",
-            clue: "The first step in any adventure is assembling your team.",
+            name: "No Meeting",
+            clue: "Silence before the real work begins.",
             hintGame: "general",
-            fullClue:
-              "The team gathers at the beginning—roles are assigned, goals are set. This is where the narrative begins."
+            fullClue: "The week opens quietly—no gathering yet, but the story is already waiting behind the scenes."
           },
           {
-            name: "Progress Tracking",
-            clue: "Keep watch over milestones.",
+            name: "Progress Tracking (SDA)",
+            clue: "Someone is quietly logging everything.",
             hintGame: "general",
-            fullClue:
-              "Documenting every step forward ensures no progress is lost to time."
+            fullClue: "SDA keeps a record of each move, like a hidden log of all your actions in the background."
           },
           {
-            name: "Taking ID pictures for portfolio; discussing the first activity; giving of templates",
-            clue: "Identity and documentation shape the journey.",
-            hintGame: "the-forgotten-files",
-            fullClue:
-              "Like collecting lost files, each document is a piece of the larger truth waiting to be discovered."
-          },
-          {
-            name: "Editing pictures for portfolio",
-            clue: "Refining the visual narrative.",
-            hintGame: "hallowpoint",
-            fullClue:
-              "As the statue is restored piece by piece, so too must the visual identity be carefully crafted."
-          },
-          {
-            name: "Finalizing portfolio",
-            clue: "The collection is complete.",
-            hintGame: "general",
-            fullClue:
-              "When all pieces come together, the full picture emerges at last."
-          }
-        ]
-      },
-      {
-        weekLabel: "Week 2",
-        days: "Portfolio review",
-        tasks: [
-          {
-            name: "Checking of portfolio online",
-            clue: "Review and verification of all work.",
-            hintGame: "the-forgotten-files",
-            fullClue:
-              "Searching through digital records reveals what was hidden before."
-          },
-          {
-            name: "No class",
-            clue: "A moment to breathe.",
-            hintGame: "general",
-            fullClue: "Even heroes need rest before the next chapter."
-          },
-          {
-            name: "Progress Tracking",
-            clue: "Monitoring forward momentum.",
-            hintGame: "general",
-            fullClue:
-              "Each day brings new progress toward the ultimate goal."
-          },
-          {
-            name: "No class",
-            clue: "Quiet halls, paused progress.",
-            hintGame: "general",
-            fullClue:
-              "The campus falls silent, but the story waits patiently."
-          },
-          {
-            name: "Break (all)",
-            clue: "Shared rest across the party.",
-            hintGame: "general",
-            fullClue:
-              "The entire group takes a step back, preparing for the next arc."
-          }
-        ]
-      },
-      {
-        weekLabel: "Week 3",
-        days: "Submission week",
-        tasks: [
-          {
-            name: "Submitting of portfolio & PIA1, TL Meeting, GD (Suggesting possible projects/games), Submitting GD recording",
-            clue: "The first major submission moment.",
+            name: "TL Meeting & GD Recording (TL, QA)",
+            clue: "Leaders meet; records are captured.",
             hintGame: "the-locked-wing",
-            fullClue:
-              "Information is gathered, recorded, and locked away for safekeeping."
+            fullClue: "When the TL and QA meet and record, information is locked in—just like a wing of the campus that keeps secrets inside."
           },
           {
-            name: "Progress Tracking",
-            clue: "Document every milestone.",
+            name: "Editing Portfolio Images (SD)",
+            clue: "Images are polished to hide imperfections.",
+            hintGame: "hallowpoint",
+            fullClue: "Like restoring a broken statue, SD refines each image so the final version tells a cleaner story."
+          },
+          {
+            name: "Finalizing Portfolio (SDA)",
+            clue: "The first collection is finally sealed.",
             hintGame: "general",
-            fullClue:
-              "Progress is only real when recorded and confirmed."
+            fullClue: "Once the portfolio is finalized, this chapter closes—and becomes a permanent part of the record."
           },
           {
-            name: "Submitting of PGD1 and PIA2, Giving tasks to TL, TL distributing tasks to members, Doing PGA1",
-            clue: "Work flows like information through a network.",
-            hintGame: "campus-quest",
-            fullClue:
-              "Tasks are distributed, puzzles are laid out, and each member must find their role in the system."
-          },
-          {
-            name: "Checking and finalizing PGA1, Submitting PGA1",
-            clue: "The first assessment arrives.",
+            name: "Break (ALL)",
+            clue: "Everyone steps away at once.",
             hintGame: "general",
-            fullClue:
-              "Every task must be checked, verified, and submitted before moving forward."
-          },
-          {
-            name: "Break (all)",
-            clue: "A brief pause in the flow.",
-            hintGame: "general",
-            fullClue:
-              "After submissions, a quiet break lets the dust settle."
+            fullClue: "The whole party rests together, giving space for the next phase of the narrative to form."
           }
         ]
       },
       {
-        weekLabel: "Week 4",
-        days: "Final stretch",
+        weekLabel: "Week 2 (15–21)",
+        days: "Portfolio Checking • Submission of Portfolio & PIA1 • Progress Tracking • GD1 & GA1 Submission • Break",
         tasks: [
           {
-            name: "Progress Tracking",
-            clue: "The year winds down, progress continues.",
-            hintGame: "general",
-            fullClue:
-              "As December fades, the team presses on toward January's challenges."
+            name: "Portfolio Checking (TL, QA)",
+            clue: "Leadership inspects what has been built.",
+            hintGame: "the-forgotten-files",
+            fullClue: "TL and QA comb through the work like investigators scanning through old files for missing details."
           },
           {
-            name: "Break (all)",
-            clue: "Rest before the next chapter.",
+            name: "Submission of Portfolio & PIA1 (SDA)",
+            clue: "The first big drop into the system.",
+            hintGame: "campus-quest",
+            fullClue: "Once submitted, the portfolio and PIA1 enter the system—like data sent into a network of campus terminals."
+          },
+          {
+            name: "Progress Tracking (SDA)",
+            clue: "The logbook is updated again.",
             hintGame: "general",
-            fullClue:
-              "Even the strongest adventurers need respite before the quest continues."
+            fullClue: "SDA notes each checkpoint, ensuring that no part of the journey goes undocumented."
+          },
+          {
+            name: "GD1 & GA1 Submission (SDA)",
+            clue: "Design and assets take their first official form.",
+            hintGame: "the-locked-wing",
+            fullClue: "The submitted GD1 and GA1 become locked references—foundation documents that later mysteries will build on."
+          },
+          {
+            name: "Break (ALL)",
+            clue: "Another pause in the visible work.",
+            hintGame: "general",
+            fullClue: "On the surface it’s a break, but beneath it, the consequences of the submissions are already in motion."
+          }
+        ]
+      },
+      {
+        weekLabel: "Week 3 (22–28)",
+        days: "Progress Tracking • Break",
+        tasks: [
+          {
+            name: "Progress Tracking (SDA)",
+            clue: "Even in quiet weeks, someone is still watching the numbers.",
+            hintGame: "general",
+            fullClue: "While everything seems slow, SDA continues to monitor, proving that the project never truly stops."
+          },
+          {
+            name: "Break (ALL)",
+            clue: "The calm before the next deadlines.",
+            hintGame: "general",
+            fullClue: "This shared break is a deep breath before January’s heavier narrative and practical work."
+          }
+        ]
+      },
+      {
+        weekLabel: "Week 4 (29–4)",
+        days: "Progress Tracking • Break",
+        tasks: [
+          {
+            name: "Progress Tracking (SDA)",
+            clue: "Closing the year with one more checkpoint.",
+            hintGame: "general",
+            fullClue: "The final December log ties up loose ends so January can start with a clean slate."
+          },
+          {
+            name: "Break (ALL)",
+            clue: "The curtain falls on December.",
+            hintGame: "general",
+            fullClue: "Everyone steps away as the month ends, but the story is already queued for its next act."
           }
         ]
       }
     ]
   },
+
   january: {
     month: "January",
     weeks: [
       {
-        weekLabel: "Week 1 (Jan 5–11)",
-        days: "Project presentation",
+        weekLabel: "Week 1 (5–11)",
+        days: "PPT Finalization • Theme Revision • Title Listing • Game Info Dev & TL Mtg • M.O.M. • Design Planning • PR Submission",
         tasks: [
           {
-            name: "Presentation of the proposed projects",
-            clue: "Ideas take shape before the audience.",
+            name: "PPT Finalization (SD, QA)",
+            clue: "The slides are sharpened for the first reveal.",
             hintGame: "general",
-            fullClue:
-              "The four games are presented to the world for the first time."
+            fullClue: "SD and QA refine the presentation like curating evidence for a formal hearing."
           },
           {
-            name: "Brainstorm game titles/names",
-            clue: "Names carry power and meaning.",
+            name: "Theme Revision (ALL)",
+            clue: "The core tone of the story is re-aligned.",
             hintGame: "general",
-            fullClue:
-              "Each title is a key that unlocks the story within."
+            fullClue: "Everyone gathers to reshape the theme, deciding how dark, mysterious, or playful the campus will feel."
           },
           {
-            name: "Content for PR1 from SD and SP",
-            clue: "Content flows from design minds.",
-            hintGame: "the-forgotten-files",
-            fullClue:
-              "Like files scattered across campus, content is gathered from multiple sources."
-          },
-          {
-            name: "Submission of PR1 @ 5 PM",
-            clue: "The first deadline arrives.",
+            name: "Title Listing (ALL)",
+            clue: "Names are drafted before identities are fixed.",
             hintGame: "campus-quest",
-            fullClue:
-              "Time is a puzzle to solve—deadlines are part of the game."
+            fullClue: "Each proposed title hints at a different version of the narrative you might end up playing in."
           },
           {
-            name: "Meeting with TL",
-            clue: "Leadership guides the path forward.",
+            name: "Game Info Dev & TL Mtg (ALL)",
+            clue: "Details of the world are pinned down.",
+            hintGame: "the-forgotten-files",
+            fullClue: "Game information is discussed like case files, with the TL meeting tying all threads together."
+          },
+          {
+            name: "M.O.M. (SDA)",
+            clue: "Minutes of the meeting become the official record.",
+            hintGame: "general",
+            fullClue: "SDA documents what was decided, preserving every choice in neat, structured lines."
+          },
+          {
+            name: "Design Planning (TL, SD, SDA)",
+            clue: "Visuals and structure are plotted out.",
+            hintGame: "hallowpoint",
+            fullClue: "Design planning sketches how the player will see and experience the mystery on screen."
+          },
+          {
+            name: "PR Submission",
+            clue: "A formal report is sent in from the field.",
+            hintGame: "general",
+            fullClue: "The PR marks the end of the first January cycle, summarizing what the team has built so far."
+          }
+        ]
+      },
+      {
+        weekLabel: "Week 2 (12–18)",
+        days: "GD Submission • Initial WBS • Logo Design • WBS Revision • Concept Planning • PR Submission",
+        tasks: [
+          {
+            name: "GD Submission (TL, SD, SDA)",
+            clue: "The design document takes official form.",
             hintGame: "the-locked-wing",
-            fullClue:
-              "The team leader holds keys to unlocking the next phase."
+            fullClue: "Once submitted, the GD becomes the blueprint that no one can casually change anymore."
           },
           {
-            name: "Brainstorm game titles/names pt.2",
-            clue: "Refinement through continued dialogue.",
+            name: "Initial WBS (TL, SD, SDA)",
+            clue: "The work is broken into visible pieces.",
             hintGame: "general",
-            fullClue:
-              "Great names emerge only after careful contemplation."
+            fullClue: "The first WBS lays out how the project truly unfolds over time—like a map of future events."
           },
           {
-            name: "SDA started working on the recorded GD",
-            clue: "Documentation begins the creative process.",
-            hintGame: "the-forgotten-files",
-            fullClue:
-              "Recordings preserve the creative spark for posterity."
-          },
-          {
-            name: "SD brainstormed ideas for the game logos",
-            clue: "Visual identity takes form.",
+            name: "Logo Design (ALL)",
+            clue: "Faces for the story are drafted.",
             hintGame: "hallowpoint",
-            fullClue:
-              "Like fragments of a broken statue, logos piece together the visual soul of each game."
+            fullClue: "Logos become symbolic masks: each design hints at mood, genre, and hidden tone."
           },
           {
-            name: "Submission of PR",
-            clue: "Another submission, another milestone.",
+            name: "WBS Revision (ALL)",
+            clue: "The map is redrawn with more precision.",
             hintGame: "general",
-            fullClue: "Progress is proven through submission."
+            fullClue: "After feedback, the WBS is adjusted so tasks, roles, and timing match reality more closely."
+          },
+          {
+            name: "Concept Planning (SD, SDA)",
+            clue: "Core ideas are organized into something playable.",
+            hintGame: "campus-quest",
+            fullClue: "Concept planning shapes scattered ideas into a structured experience across the UE campus."
+          },
+          {
+            name: "PR Submission",
+            clue: "Another report closes the loop.",
+            hintGame: "general",
+            fullClue: "A second PR tracks how the design and planning have evolved since the last checkpoint."
           }
         ]
       },
       {
-        weekLabel: "Week 2",
-        days: "Continued development",
+        weekLabel: "Week 3 (19–25)",
+        days: "Rubric Submission • Internal Deadline • PRELIM PRACTICAL EXAM & Logo Presentation • Progress Compilation • PR Submission",
         tasks: [
           {
-            name: "Continuation of the GD",
-            clue: "The creative work deepens.",
-            hintGame: "hallowpoint",
-            fullClue:
-              "Like searching for statue fragments, the concept continues to take shape."
+            name: "Rubric Submission (SD, SDA)",
+            clue: "The criteria of judgment are locked in.",
+            hintGame: "general",
+            fullClue: "Submitting the rubric defines how every future effort will be measured."
           },
           {
-            name: "Initial WBS",
-            clue: "The structure of the project emerges.",
+            name: "Internal Deadline (TL, SDA)",
+            clue: "A line is drawn before the real exam.",
+            hintGame: "general",
+            fullClue: "The internal deadline forces the group to act as if the exam already started."
+          },
+          {
+            name: "PRELIM PRACTICAL EXAM & Logo Presentation",
+            clue: "The first public trial of your work.",
             hintGame: "campus-quest",
-            fullClue:
-              "Every puzzle has a structure; every project needs a WBS."
+            fullClue: "The prelim practical exam and logo presentation reveal how well the pieces hold together under pressure."
           },
           {
-            name: "Progress Tracking",
-            clue: "Steady progress toward the goal.",
+            name: "Progress Compilation (SDA)",
+            clue: "All steps are stitched into one narrative.",
+            hintGame: "the-forgotten-files",
+            fullClue: "SDA compiles the progress like assembling a case summary from scattered documents."
+          },
+          {
+            name: "PR Submission",
+            clue: "A final mid-month report closes the chapter.",
             hintGame: "general",
-            fullClue:
-              "Tracking ensures no work is lost or forgotten."
-          },
-          {
-            name: "Submission of PR2 @ 8 AM",
-            clue: "Early morning, another deadline.",
-            hintGame: "campus-quest",
-            fullClue:
-              "Time waits for no one in this locked environment."
-          },
-          {
-            name: "Final brainstorm for the concepts of the approved game titles to start the logos",
-            clue: "Concepts solidify before visuals bloom.",
-            hintGame: "general",
-            fullClue:
-              "The narrative foundation must be strong before artistic expression can flourish."
-          },
-          {
-            name: "Submission of PR",
-            clue: "Progress report submitted.",
-            hintGame: "general",
-            fullClue:
-              "Each submission is proof of forward momentum."
+            fullClue: "This PR records the outcomes of the exam, presentation, and all January milestones so far."
           }
         ]
       },
       {
-        weekLabel: "Week 3",
-        days: "Final push",
+        weekLabel: "Week 4 (26 – Feb 1)",
+        days: "Break (ALL)",
         tasks: [
           {
-            name: "Submission of printed rubric with SDA filled out on the day of the group's practical exam",
-            clue: "Documentation meets evaluation.",
-            hintGame: "the-forgotten-files",
-            fullClue:
-              "Every piece of paper is a clue waiting to be found."
-          },
-          {
-            name: "Internal deadline for the game logos, WBS, and presentation content/theme",
-            clue: "The internal deadline looms.",
-            hintGame: "campus-quest",
-            fullClue:
-              "Multiple puzzles must be solved before the escape route appears."
-          },
-          {
-            name: "Progress Tracking",
-            clue: "Monitor the final stretch.",
+            name: "Break (ALL)",
+            clue: "The team rests after a dense arc.",
             hintGame: "general",
-            fullClue: "In the final moments, every action counts."
-          },
-          {
-            name: "PRELIM PRACTICAL EXAM (Presentation of the game logos)",
-            clue: "The logos face their trial.",
-            hintGame: "hallowpoint",
-            fullClue:
-              "Like the statue restored, the visual identity is now complete and ready to shine."
-          },
-          {
-            name: "Compilation of progress for week 3",
-            clue: "The week's work is gathered.",
-            hintGame: "the-forgotten-files",
-            fullClue:
-              "All files are compiled into one final archive."
-          },
-          {
-            name: "Submission of PR",
-            clue: "The final progress report.",
-            hintGame: "general",
-            fullClue:
-              "Work is only real when submitted and confirmed."
-          }
-        ]
-      },
-      {
-        weekLabel: "Week 4",
-        days: "Rest and reflection",
-        tasks: [
-          {
-            name: "Break (all)",
-            clue: "The quest pauses for a moment.",
-            hintGame: "general",
-            fullClue:
-              "Even the greatest adventures need chapters of rest."
+            fullClue: "Everyone steps back, letting the dust settle before the next phase of development and story."
           }
         ]
       }
     ]
   }
 };
+
 
 const GAME_CONCEPTS = [
   {
