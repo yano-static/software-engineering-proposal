@@ -263,7 +263,7 @@ const GAME_CONCEPTS = [
     title: "The Locked Wing",
     mood: "Mysterious • Exploratory • Tense",
     overview:
-      "A system failure in the Dalupan Building prevents the evacuation alert from reaching the entire campus, leading to the mysterious disappearance and eventual collapse of the university grounds.",
+      "A system failure in the Dalupan Building prevented the evacuation alert from reaching the entire campus, leading to the mysterious disappearance and eventual collapse of the university campus.",
     summary: `A system failure in the Dalupan Building prevents the evacuation alert from reaching the entire campus. As the player explores from the LB Building across key campus areas, they must uncover the reason behind the alert failure and navigate to the Dalupan Building itself. The investigation reveals a critical twist: students were safely confined in a secure area—the player's true objective is to release them. This narrative explores themes of miscommunication, hidden safety protocols, and the weight of responsibility.`,
     logos: [
       "thelockedwing.png",
@@ -304,14 +304,18 @@ const GAME_CONCEPTS = [
     ]
   },
   {
-    id: "campus-quest",
+   id: "campus-quest",
     title: "Campus Quest",
     mood: "Playful • Puzzle-driven • Strategic",
     overview:
       "A campus-wide systems puzzle where gates, rooms, and devices form a dynamic network the player must analyze and reconfigure to escape in time.",
     summary: `The player begins at the Main Gate, realizing the campus has turned into a puzzle-box of interlinked systems: RFID gates, elevators, lab access, and hidden server rooms. By exploring key points such as the LB Building, CC Lab, and Admin Offices, the player pieces together how different nodes control access around the campus. In each area, they solve device-based puzzles or logic challenges that reveal new connections on their mental map. The endgame reveals a critical systems misconfiguration preventing safe evacuation. By choosing how to reroute power and access, the player either restores balance—or traps themselves in a new kind of lockdown. This game emphasizes systemic thinking, cause-and-effect, and the complexity of modern campuses.`,
     logos: [
-      "campusquest.png"
+      "hallowpoint1.png",
+      "hallowpoint2.png",
+      "hallowpoint3.png",
+      "hallowpoint4.png",
+      "hallowpoint5.png"
     ]
   }
 ];
