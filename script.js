@@ -369,7 +369,11 @@ const GAME_CONCEPTS = [
       "The player awakens in an abandoned campus garden with no clear goal. As they wander aimlessly, curiosity leads them to a broken Lualhati statue—the key to restoring the campus's lost essence.",
     summary: `Beginning in Recto Garden with no initial purpose, the player wanders the dreamlike campus—a blank slate of exploration. Their curiosity gradually focuses when they discover the first fragment of a broken Lualhati statue in the Quadrangle central hub. A new objective emerges: restore the statue. Through exploration of optional puzzle sections, the player collects remaining fragments. Once assembled, a bright light envelops the scene, restoring the campus to normalcy. The narrative ends ambiguously: the player wakes to an NPC's casual remark about "putting things back together," leaving them uncertain whether the experience was real or imagined. This game explores themes of healing, ambiguity, and quiet transformation.`,
     logos: [
-      "hallowpoint2.png"
+      "hallowpoint2.png",
+        "hallowpoint1.png",
+        "hallowpoint3.png",
+        "hallowpoint4.png",
+        "hallowpoint5.png"
     ]
   },
   {
