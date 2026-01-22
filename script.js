@@ -4,7 +4,7 @@ const WBS_DATA = {
     weeks: [
       {
         weekLabel: "Week 1 (8–14)",
-        days: "No Meeting • Progress Tracking • TL Meeting & GD Recording • Editing & Finalizing Portfolio",
+        days: ,
         tasks: [
           {
             name: "No Meeting",
@@ -46,7 +46,7 @@ const WBS_DATA = {
       },
       {
         weekLabel: "Week 2 (15–21)",
-        days: "Portfolio Checking • Submission of Portfolio & PIA1 • Progress Tracking • GD1 & GA1 Submission • Break",
+        days: ,
         tasks: [
           {
             name: "Portfolio Checking (TL, QA)",
@@ -82,7 +82,7 @@ const WBS_DATA = {
       },
       {
         weekLabel: "Week 3 (22–28)",
-        days: "Progress Tracking • Break",
+        days: ,
         tasks: [
           {
             name: "Progress Tracking (SDA)",
@@ -100,7 +100,7 @@ const WBS_DATA = {
       },
       {
         weekLabel: "Week 4 (29–4)",
-        days: "Progress Tracking • Break",
+        days: ,
         tasks: [
           {
             name: "Progress Tracking (SDA)",
@@ -124,7 +124,7 @@ const WBS_DATA = {
     weeks: [
       {
         weekLabel: "Week 1 (5–11)",
-        days: "PPT Finalization • Theme Revision • Title Listing • Game Info Dev & TL Mtg • M.O.M. • Design Planning • PR Submission",
+        days: ,
         tasks: [
           {
             name: "PPT Finalization (SD, QA)",
@@ -172,7 +172,7 @@ const WBS_DATA = {
       },
       {
         weekLabel: "Week 2 (12–18)",
-        days: "GD Submission • Initial WBS • Logo Design • WBS Revision • Concept Planning • PR Submission",
+        days: ,
         tasks: [
           {
             name: "GD Submission (TL, SD, SDA)",
@@ -214,7 +214,7 @@ const WBS_DATA = {
       },
       {
         weekLabel: "Week 3 (19–25)",
-        days: "Rubric Submission • Internal Deadline • PRELIM PRACTICAL EXAM & Logo Presentation • Progress Compilation • PR Submission",
+        days: ,
         tasks: [
           {
             name: "Rubric Submission (SD, SDA)",
@@ -250,7 +250,7 @@ const WBS_DATA = {
       },
       {
         weekLabel: "Week 4 (26 – Feb 1)",
-        days: "Break (ALL)",
+        days: ,
         tasks: [
           {
             name: "Break (ALL)",
